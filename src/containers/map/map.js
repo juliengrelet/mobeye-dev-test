@@ -12,7 +12,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoianVsaWVuZ3JlbGV0IiwiYSI6ImNqbHdmeGl2NjAybWIzd
 class Map extends Component{
 
      componentDidMount(){
-
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/juliengrelet/cjlwgzz2x3plt2sqae4jhe1ye',
@@ -29,7 +28,6 @@ class Map extends Component{
 
              btnMarker.addEventListener('click', () => {
                 this.props.selectMicromania(dataLocation);
-                console.log("caca");
              });
 
              // add marker to map
